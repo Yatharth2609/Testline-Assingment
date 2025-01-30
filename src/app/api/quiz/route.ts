@@ -1,19 +1,37 @@
-import { NextResponse } from "next/server"
-import { Quiz } from "@/types/quiz"
+import { NextResponse } from 'next/server'
+import type { Quiz, Question, Option } from '@/types/quiz'
+
+interface APIQuestion {
+  id: number
+  description: string
+  options: APIOption[]
+  detailed_solution: string
+}
+
+interface APIOption {
+  id: number
+  description: string
+  is_correct: boolean
+}
+
+interface APIResponse {
+  id: number
+  title: string
+  questions: APIQuestion[]
+}
 
 export async function GET() {
   try {
     const response = await fetch("https://api.jsonserve.com/Uw5CrX")
-    const data = await response.json()
+    const data: APIResponse = await response.json()
 
-    // Transform the data to match our Quiz type
     const quiz: Quiz = {
       id: data.id,
       title: data.title,
-      questions: data.questions.map((q: any) => ({
+      questions: data.questions.map((q: APIQuestion) => ({
         id: q.id,
         description: q.description,
-        options: q.options.map((opt: any) => ({
+        options: q.options.map((opt: APIOption) => ({
           id: opt.id,
           text: opt.description,
           isCorrect: opt.is_correct
@@ -26,7 +44,7 @@ export async function GET() {
   } catch (error) {
     console.error("Error fetching quiz data:", error)
     return NextResponse.json(
-      { error: "Failed to fetch quiz data" },
+      { error: 'Failed to fetch quiz data' },
       { status: 500 }
     )
   }

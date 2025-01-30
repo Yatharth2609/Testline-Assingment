@@ -7,10 +7,14 @@ interface QuizQuestionProps {
   onAnswer: (questionId: number, optionId: number) => void
   currentQuestion: number
   totalQuestions: number
-  onComplete: () => void
 }
 
-export default function QuizQuestion({ question, onAnswer, currentQuestion, totalQuestions, onComplete }: QuizQuestionProps) {
+export default function QuizQuestion({ 
+  question, 
+  onAnswer, 
+  currentQuestion, 
+  totalQuestions 
+}: QuizQuestionProps) {
   return (
     <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-xl border border-white/20 p-6 text-white">
       <div className="mb-4 text-sm text-white/60">
