@@ -31,7 +31,7 @@ A modern, engaging quiz application built with Next.js and TypeScript, featuring
 
 1. Clone the repository:
 ```bash
-git clone [<repository-url>](https://github.com/Yatharth2609/Testline-Assingment.git)
+git clone https://github.com/Yatharth2609/Testline-Assingment.git
 cd timelines
 ```
 
