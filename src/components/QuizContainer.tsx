@@ -1,11 +1,10 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import StartQuiz from "./StartQuiz"
 import QuizComponent from "./Quiz"
 import type { Quiz } from "@/types/quiz"
-import QuizQuestion from "./QuizQuestion"
 
 interface QuizContainerProps {
   initialQuiz: Quiz | null

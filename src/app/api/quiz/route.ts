@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import type { Quiz, Question, Option } from '@/types/quiz'
+import type { Quiz } from '@/types/quiz'
 
 interface APIQuestion {
   id: number
