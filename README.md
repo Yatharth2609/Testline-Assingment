@@ -21,6 +21,15 @@ The project is deployed at vercel, here is the live project link: [here](https:/
 - [Tailwind CSS](https://tailwindcss.com/) - Styling
 - [Framer Motion](https://www.framer.com/motion/) - Animations
 
+## UI/UX Images
+
+![Screenshot 2025-01-31 213907](https://github.com/user-attachments/assets/0246cda2-1fa9-458c-b55b-d5a5785f99f2)
+![Screenshot 2025-01-31 213924](https://github.com/user-attachments/assets/4d807b2c-5c47-470c-9fb1-49587ba66a1e)
+![Screenshot 2025-01-31 213937](https://github.com/user-attachments/assets/30c3e19b-fc2d-45ac-bd47-7cdf3e85f54e)
+![Screenshot 2025-01-31 213957](https://github.com/user-attachments/assets/ededa7eb-792b-43bb-9544-f70b4d8050d2)
+![Screenshot 2025-01-31 214020](https://github.com/user-attachments/assets/77cd4f78-c4ba-4835-b5f7-4784878e3598)
+![Screenshot 2025-01-31 214051](https://github.com/user-attachments/assets/c8427ac8-4ea6-43b6-9bcd-aee9c475c528)
+
 ## Getting Started
 
 ### Prerequisites
